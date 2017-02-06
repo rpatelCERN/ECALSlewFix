@@ -1,0 +1,103 @@
+06-Feb-2017 08:21:01 CST  Initiating request to open file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+%MSG-w XrdAdaptor:  file_open 06-Feb-2017 08:21:04 CST pre-events
+Data is served from fnal.gov instead of original site T1_US_FNAL
+%MSG
+06-Feb-2017 08:21:07 CST  Successfully opened file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+Begin processing the 1st record. Run 278986, Event 120099101, LumiSection 118 at 06-Feb-2017 08:21:16.388 CST
+Pho Indicies 0
+Pho Indicies 1
+Pho Indicies 2
+Begin processing the 2nd record. Run 278986, Event 209884624, LumiSection 164 at 06-Feb-2017 08:21:18.619 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 3rd record. Run 278820, Event 61351153, LumiSection 39 at 06-Feb-2017 08:21:18.645 CST
+Pho Indicies 0
+Pho Indicies 1
+Pho Indicies 2
+Begin processing the 4th record. Run 278820, Event 40034697, LumiSection 27 at 06-Feb-2017 08:21:18.670 CST
+Pho Indicies 0
+Begin processing the 5th record. Run 278820, Event 30049411, LumiSection 22 at 06-Feb-2017 08:21:18.695 CST
+Begin processing the 6th record. Run 278820, Event 41402101, LumiSection 28 at 06-Feb-2017 08:21:18.750 CST
+Pho Indicies 0
+Pho Index 0
+Pho Index 0
+Begin processing the 7th record. Run 278820, Event 111062205, LumiSection 66 at 06-Feb-2017 08:21:18.779 CST
+Begin processing the 8th record. Run 278820, Event 49334126, LumiSection 32 at 06-Feb-2017 08:21:18.809 CST
+Begin processing the 9th record. Run 278820, Event 65109645, LumiSection 41 at 06-Feb-2017 08:21:18.844 CST
+Pho Indicies 0
+Begin processing the 10th record. Run 278820, Event 60156215, LumiSection 38 at 06-Feb-2017 08:21:18.884 CST
+Pho Indicies 0
+Begin processing the 11th record. Run 278820, Event 112920677, LumiSection 67 at 06-Feb-2017 08:21:18.905 CST
+Pho Indicies 0
+Begin processing the 12th record. Run 278820, Event 66866307, LumiSection 42 at 06-Feb-2017 08:21:18.928 CST
+Pho Indicies 0
+Begin processing the 13th record. Run 278820, Event 66284811, LumiSection 42 at 06-Feb-2017 08:21:18.952 CST
+Begin processing the 14th record. Run 278820, Event 73507476, LumiSection 45 at 06-Feb-2017 08:21:18.990 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 15th record. Run 278820, Event 98350062, LumiSection 59 at 06-Feb-2017 08:21:19.022 CST
+Begin processing the 16th record. Run 278820, Event 82450496, LumiSection 50 at 06-Feb-2017 08:21:19.060 CST
+Pho Indicies 0
+Begin processing the 17th record. Run 278820, Event 255729384, LumiSection 149 at 06-Feb-2017 08:21:19.080 CST
+Pho Indicies 0
+Begin processing the 18th record. Run 278820, Event 139537145, LumiSection 82 at 06-Feb-2017 08:21:19.136 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 19th record. Run 278820, Event 424877386, LumiSection 238 at 06-Feb-2017 08:21:19.158 CST
+Pho Indicies 0
+Begin processing the 20th record. Run 278820, Event 387260180, LumiSection 217 at 06-Feb-2017 08:21:19.185 CST
+Pho Indicies 0
+Begin processing the 21st record. Run 278820, Event 253974741, LumiSection 148 at 06-Feb-2017 08:21:19.212 CST
+Pho Indicies 0
+Begin processing the 22nd record. Run 278820, Event 341490342, LumiSection 193 at 06-Feb-2017 08:21:19.258 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 23rd record. Run 278820, Event 140732496, LumiSection 83 at 06-Feb-2017 08:21:19.278 CST
+Pho Indicies 0
+Pho Indicies 1
+Pho Indicies 2
+Begin processing the 24th record. Run 278820, Event 378867385, LumiSection 213 at 06-Feb-2017 08:21:19.299 CST
+Pho Indicies 0
+Begin processing the 25th record. Run 278820, Event 378976542, LumiSection 213 at 06-Feb-2017 08:21:19.319 CST
+Begin processing the 26th record. Run 278820, Event 403428803, LumiSection 226 at 06-Feb-2017 08:21:19.358 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 27th record. Run 278820, Event 404101063, LumiSection 226 at 06-Feb-2017 08:21:19.371 CST
+Pho Indicies 0
+Pho Indicies 1
+Begin processing the 28th record. Run 278820, Event 159827551, LumiSection 94 at 06-Feb-2017 08:21:19.387 CST
+Begin processing the 29th record. Run 278820, Event 327938686, LumiSection 186 at 06-Feb-2017 08:21:19.413 CST
+Pho Indicies 0
+Pho Index 0
+Begin processing the 30th record. Run 280330, Event 734817353, LumiSection 388 at 06-Feb-2017 08:21:19.453 CST
+Begin processing the 31st record. Run 280330, Event 465153399, LumiSection 246 at 06-Feb-2017 08:21:19.470 CST
+Pho Indicies 0
+Begin processing the 32nd record. Run 280330, Event 530351974, LumiSection 279 at 06-Feb-2017 08:21:19.488 CST
+Pho Indicies 0
+Begin processing the 33rd record. Run 280330, Event 686885356, LumiSection 360 at 06-Feb-2017 08:21:19.503 CST
+Pho Indicies 0
+Pho Indicies 1
+Pho Indicies 2
+Pho Indicies 3
+06-Feb-2017 08:21:19 CST  Closed file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 XrdAdaptor           -w file_open                              1        1
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptor           pre-events                        
+    2 fileAction           PostEndRun                        
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 1                   1
+System                  3                   3

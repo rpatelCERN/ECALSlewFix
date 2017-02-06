@@ -1,0 +1,7 @@
+----- Begin Fatal Exception 06-Feb-2017 08:05:33 CST-----------------------
+An exception of category 'ConfigFileReadError' occurred while
+   [0] Processing the python configuration file named ConfFile_cfg.py
+Exception Message:
+python encountered the error: <type 'exceptions.IOError'>
+[Errno 2] No such file or directory: 'ConfFile_cfg.py'
+----- End Fatal Exception -------------------------------------------------

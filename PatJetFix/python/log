@@ -1,0 +1,1074 @@
+06-Feb-2017 07:51:10 CST  Initiating request to open file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+%MSG-w XrdAdaptor:  file_open 06-Feb-2017 07:51:13 CST pre-events
+Data is served from fnal.gov instead of original site T1_US_FNAL
+%MSG
+06-Feb-2017 07:51:16 CST  Successfully opened file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+Begin processing the 1st record. Run 278986, Event 120099101, LumiSection 118 at 06-Feb-2017 07:51:25.284 CST
+----- Begin Fatal Exception 06-Feb-2017 07:51:26 CST-----------------------
+An exception of category 'InsertFailure' occurred while
+   [0] Processing run: 278986 lumi: 118 event: 120099101
+   [1] Running path 'p'
+   [2] Calling event method for module PatJetFix/'myProducerLabel'
+Exception Message:
+Illegal attempt to 'put' an unregistered product.
+No product is registered for
+  product friendly class name: 'patJets'
+  module label:                'myProducerLabel'
+  product instance name:       'CorrPatJets'
+  process name:                'OWNPARTICLES'
+The ProductRegistry contains:
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = ecalMultiAndGSGlobalRecHitEB
+Branch ID = 3543256812
+Class Name = edm::EDCollection<DetId>
+Friendly Class Name = DetIdedmEDCollection
+Product Instance Name = hitsNotReplaced
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = selectDigi
+Branch ID = 656133611
+Class Name = EBDigiCollection
+Friendly Class Name = EBDigiCollection
+Product Instance Name = selectedEcalEBDigiCollection
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = selectDigi
+Branch ID = 3840912975
+Class Name = EEDigiCollection
+Friendly Class Name = EEDigiCollection
+Product Instance Name = selectedEcalEEDigiCollection
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 4266226245
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedEBRecHits
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 2201646109
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedEERecHits
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 2547518746
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedESRecHits
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3118007358
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedEBRecHits
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3299476070
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedEERecHits
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3494411105
+Class Name = edm::SortedCollection<EcalRecHit,edm::StrictWeakOrdering<EcalRecHit> >
+Friendly Class Name = EcalRecHitsSorted
+Product Instance Name = reducedESRecHits
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = gtStage2Digis
+Branch ID = 2411975214
+Class Name = BXVector<GlobalAlgBlk>
+Friendly Class Name = GlobalAlgBlkBXVector
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = gtStage2Digis
+Branch ID = 842690128
+Class Name = BXVector<GlobalExtBlk>
+Friendly Class Name = GlobalExtBlkBXVector
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = hcalnoise
+Branch ID = 2037070177
+Class Name = HcalNoiseSummary
+Friendly Class Name = HcalNoiseSummary
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = gtDigis
+Branch ID = 2424502713
+Class Name = L1GlobalTriggerReadoutRecord
+Friendly Class Name = L1GlobalTriggerReadoutRecord
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = scalersRawToDigi
+Branch ID = 2480722921
+Class Name = std::vector<LumiScalers>
+Friendly Class Name = LumiScalerss
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = particleFlowEGammaGSFixed
+Branch ID = 1131775579
+Class Name = bool
+Friendly Class Name = bool
+Product Instance Name = dupECALClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = particleFlowEGammaGSFixed
+Branch ID = 1374251790
+Class Name = bool
+Friendly Class Name = bool
+Product Instance Name = dupESClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 1118438447
+Class Name = edm::ValueMap<bool>
+Friendly Class Name = booledmValueMap
+Product Instance Name = PhotonCutBasedIDLoose
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 964090322
+Class Name = edm::ValueMap<bool>
+Friendly Class Name = booledmValueMap
+Product Instance Name = PhotonCutBasedIDLooseEM
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 2071969286
+Class Name = edm::ValueMap<bool>
+Friendly Class Name = booledmValueMap
+Product Instance Name = PhotonCutBasedIDTight
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoAll
+Branch ID = 1888816577
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetAll
+Branch ID = 3668620658
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetAllCalo
+Branch ID = 2805029244
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetCentral
+Branch ID = 2683932006
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetCentralCalo
+Branch ID = 3306329620
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetCentralChargedPileUp
+Branch ID = 3023439177
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = fixedGridRhoFastjetCentralNeutral
+Branch ID = 2381880610
+Class Name = double
+Friendly Class Name = double
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = HLT
+ModuleLabel = TriggerResults
+Branch ID = 3778273250
+Class Name = edm::TriggerResults
+Friendly Class Name = edmTriggerResults
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = OWNPARTICLES
+ModuleLabel = TriggerResults
+Branch ID = 434123973
+Class Name = edm::TriggerResults
+Friendly Class Name = edmTriggerResults
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = TriggerResults
+Branch ID = 2084975553
+Class Name = edm::TriggerResults
+Friendly Class Name = edmTriggerResults
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = TriggerResults
+Branch ID = 1927708019
+Class Name = edm::TriggerResults
+Friendly Class Name = edmTriggerResults
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETEGCor
+Branch ID = 3422849629
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corSumEt
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETEGCor
+Branch ID = 1317810023
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corX
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETEGCor
+Branch ID = 2245065922
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corY
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETMuCor
+Branch ID = 3012827251
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corSumEt
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETMuCor
+Branch ID = 3418186745
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corX
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = puppiMETMuCor
+Branch ID = 14790748
+Class Name = float
+Friendly Class Name = float
+Product Instance Name = corY
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = offlineSlimmedPrimaryVertices
+Branch ID = 3663900542
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 2848552652
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eidLoose
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 643334510
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eidRobustHighEnergy
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 1553911406
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eidRobustLoose
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 1699443783
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eidRobustTight
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 2417806565
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eidTight
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 877948622
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eleEcalPFClusIso
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3355418917
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = eleHcalPFClusIso
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3245017898
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = phoEcalPFClusIso
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 851494081
+Class Name = edm::ValueMap<float>
+Friendly Class Name = floatedmValueMap
+Product Instance Name = phoHcalPFClusIso
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 2800287757
+Class Name = std::vector<l1extra::L1EmParticle>
+Friendly Class Name = l1extraL1EmParticles
+Product Instance Name = Isolated
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 3030326182
+Class Name = std::vector<l1extra::L1EmParticle>
+Friendly Class Name = l1extraL1EmParticles
+Product Instance Name = NonIsolated
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 1983770461
+Class Name = std::vector<l1extra::L1EtMissParticle>
+Friendly Class Name = l1extraL1EtMissParticles
+Product Instance Name = MET
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 3979934348
+Class Name = std::vector<l1extra::L1EtMissParticle>
+Friendly Class Name = l1extraL1EtMissParticles
+Product Instance Name = MHT
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 937566116
+Class Name = std::vector<l1extra::L1HFRings>
+Friendly Class Name = l1extraL1HFRingss
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 1972303626
+Class Name = std::vector<l1extra::L1JetParticle>
+Friendly Class Name = l1extraL1JetParticles
+Product Instance Name = Central
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 2581284716
+Class Name = std::vector<l1extra::L1JetParticle>
+Friendly Class Name = l1extraL1JetParticles
+Product Instance Name = Forward
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 1860295503
+Class Name = std::vector<l1extra::L1JetParticle>
+Friendly Class Name = l1extraL1JetParticles
+Product Instance Name = IsoTau
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 1824757270
+Class Name = std::vector<l1extra::L1JetParticle>
+Friendly Class Name = l1extraL1JetParticles
+Product Instance Name = Tau
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = l1extraParticles
+Branch ID = 2097733092
+Class Name = std::vector<l1extra::L1MuonParticle>
+Friendly Class Name = l1extraL1MuonParticles
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = caloStage2Digis
+Branch ID = 2280735981
+Class Name = BXVector<l1t::EGamma>
+Friendly Class Name = l1tEGammaBXVector
+Product Instance Name = EGamma
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = caloStage2Digis
+Branch ID = 4043054084
+Class Name = BXVector<l1t::EtSum>
+Friendly Class Name = l1tEtSumBXVector
+Product Instance Name = EtSum
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = caloStage2Digis
+Branch ID = 3097291131
+Class Name = BXVector<l1t::Jet>
+Friendly Class Name = l1tJetBXVector
+Product Instance Name = Jet
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = gmtStage2Digis
+Branch ID = 2757105380
+Class Name = BXVector<l1t::Muon>
+Friendly Class Name = l1tMuonBXVector
+Product Instance Name = Muon
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = caloStage2Digis
+Branch ID = 53851530
+Class Name = BXVector<l1t::Tau>
+Friendly Class Name = l1tTauBXVector
+Product Instance Name = Tau
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedElectrons
+Branch ID = 2608992915
+Class Name = std::vector<pat::Electron>
+Friendly Class Name = patElectrons
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedElectronsBeforeGSFix
+Branch ID = 1742216331
+Class Name = std::vector<pat::Electron>
+Friendly Class Name = patElectrons
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = OWNPARTICLES
+ModuleLabel = myProducerLabel
+Branch ID = 2905738938
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJets
+Branch ID = 1148725398
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8
+Branch ID = 2537756989
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8Backup
+Branch ID = 3496135515
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8PFCHSSoftDropPacked
+Branch ID = 3220949606
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = SubJets
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8PFCHSSoftDropPackedBackup
+Branch ID = 2438081261
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = SubJets
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8PFPuppiSoftDropPacked
+Branch ID = 208645678
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = SubJets
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsAK8PFPuppiSoftDropPackedBackup
+Branch ID = 3956360667
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = SubJets
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsBackup
+Branch ID = 2535280521
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsPuppi
+Branch ID = 953784364
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedJetsPuppiBackup
+Branch ID = 2495060186
+Class Name = std::vector<pat::Jet>
+Friendly Class Name = patJets
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETs
+Branch ID = 902731913
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETsEGClean
+Branch ID = 72181654
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETsMuEGClean
+Branch ID = 2665253331
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETsNoHF
+Branch ID = 3680144228
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETsPuppi
+Branch ID = 820780272
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMETsUncorrected
+Branch ID = 986568541
+Class Name = std::vector<pat::MET>
+Friendly Class Name = patMETs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedMuons
+Branch ID = 2039612152
+Class Name = std::vector<pat::Muon>
+Friendly Class Name = patMuons
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = lostTracks
+Branch ID = 3525422632
+Class Name = std::vector<pat::PackedCandidate>
+Friendly Class Name = patPackedCandidates
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = packedPFCandidates
+Branch ID = 1149556851
+Class Name = std::vector<pat::PackedCandidate>
+Friendly Class Name = patPackedCandidates
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = packedPFCandidatesDiscarded
+Branch ID = 3268697224
+Class Name = std::vector<pat::PackedCandidate>
+Friendly Class Name = patPackedCandidates
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = patTrigger
+Branch ID = 1765059585
+Class Name = pat::PackedTriggerPrescales
+Friendly Class Name = patPackedTriggerPrescales
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = patTrigger
+Branch ID = 792492728
+Class Name = pat::PackedTriggerPrescales
+Friendly Class Name = patPackedTriggerPrescales
+Product Instance Name = l1max
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = patTrigger
+Branch ID = 3378304345
+Class Name = pat::PackedTriggerPrescales
+Friendly Class Name = patPackedTriggerPrescales
+Product Instance Name = l1min
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedPhotons
+Branch ID = 823444344
+Class Name = std::vector<pat::Photon>
+Friendly Class Name = patPhotons
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedPhotonsBeforeGSFix
+Branch ID = 1360862447
+Class Name = std::vector<pat::Photon>
+Friendly Class Name = patPhotons
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedTaus
+Branch ID = 4186095971
+Class Name = std::vector<pat::Tau>
+Friendly Class Name = patTaus
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedTausBoosted
+Branch ID = 2338867371
+Class Name = std::vector<pat::Tau>
+Friendly Class Name = patTaus
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = selectedPatTrigger
+Branch ID = 803492778
+Class Name = std::vector<pat::TriggerObjectStandAlone>
+Friendly Class Name = patTriggerObjectStandAlones
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = BeamHaloSummary
+Branch ID = 578358300
+Class Name = reco::BeamHaloSummary
+Friendly Class Name = recoBeamHaloSummary
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = offlineBeamSpot
+Branch ID = 1112442774
+Class Name = reco::BeamSpot
+Friendly Class Name = recoBeamSpot
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = RECO
+ModuleLabel = CSCHaloData
+Branch ID = 1734628764
+Class Name = reco::CSCHaloData
+Friendly Class Name = recoCSCHaloData
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 1339708744
+Class Name = std::vector<reco::CaloCluster>
+Friendly Class Name = recoCaloClusters
+Product Instance Name = reducedEBEEClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 904618217
+Class Name = std::vector<reco::CaloCluster>
+Friendly Class Name = recoCaloClusters
+Product Instance Name = reducedESClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 2608302407
+Class Name = std::vector<reco::CaloCluster>
+Friendly Class Name = recoCaloClusters
+Product Instance Name = reducedEBEEClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3049866806
+Class Name = std::vector<reco::CaloCluster>
+Friendly Class Name = recoCaloClusters
+Product Instance Name = reducedESClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 849204112
+Class Name = std::vector<reco::Conversion>
+Friendly Class Name = recoConversions
+Product Instance Name = reducedConversions
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 2889603569
+Class Name = std::vector<reco::Conversion>
+Friendly Class Name = recoConversions
+Product Instance Name = reducedSingleLegConversions
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3810116685
+Class Name = std::vector<reco::Conversion>
+Friendly Class Name = recoConversions
+Product Instance Name = reducedConversions
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 2587248326
+Class Name = std::vector<reco::Conversion>
+Friendly Class Name = recoConversions
+Product Instance Name = reducedSingleLegConversions
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 3633814711
+Class Name = std::vector<reco::GsfElectronCore>
+Friendly Class Name = recoGsfElectronCores
+Product Instance Name = reducedGedGsfElectronCores
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 3864283616
+Class Name = std::vector<reco::GsfElectronCore>
+Friendly Class Name = recoGsfElectronCores
+Product Instance Name = reducedGedGsfElectronCores
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 562356649
+Class Name = edm::ValueMap<std::vector<edm::Ref<std::vector<reco::PFCandidate>,reco::PFCandidate,edm::refhelper::FindUsingAdvance<std::vector<reco::PFCandidate>,reco::PFCandidate> > > >
+Friendly Class Name = recoPFCandidatesrecoPFCandidaterecoPFCandidatesrecoPFCandidateedmrefhelperFindUsingAdvanceedmRefsedmValueMap
+Product Instance Name = reducedGsfElectronPfCandMap
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 1050975800
+Class Name = edm::ValueMap<std::vector<edm::Ref<std::vector<reco::PFCandidate>,reco::PFCandidate,edm::refhelper::FindUsingAdvance<std::vector<reco::PFCandidate>,reco::PFCandidate> > > >
+Friendly Class Name = recoPFCandidatesrecoPFCandidaterecoPFCandidatesrecoPFCandidateedmrefhelperFindUsingAdvanceedmRefsedmValueMap
+Product Instance Name = reducedPhotonPfCandMap
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 316056120
+Class Name = std::vector<reco::PhotonCore>
+Friendly Class Name = recoPhotonCores
+Product Instance Name = reducedGedPhotonCores
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 1646778641
+Class Name = std::vector<reco::PhotonCore>
+Friendly Class Name = recoPhotonCores
+Product Instance Name = reducedGedPhotonCores
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgamma
+Branch ID = 2726989090
+Class Name = std::vector<reco::SuperCluster>
+Friendly Class Name = recoSuperClusters
+Product Instance Name = reducedSuperClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = reducedEgammaBeforeGSFix
+Branch ID = 249848244
+Class Name = std::vector<reco::SuperCluster>
+Friendly Class Name = recoSuperClusters
+Product Instance Name = reducedSuperClusters
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = slimmedSecondaryVertices
+Branch ID = 707688581
+Class Name = std::vector<reco::VertexCompositePtrCandidate>
+Friendly Class Name = recoVertexCompositePtrCandidates
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = offlineSlimmedPrimaryVertices
+Branch ID = 2190359633
+Class Name = std::vector<reco::Vertex>
+Friendly Class Name = recoVertexs
+Product Instance Name = 
+
+-----
+Branch Type = Event
+Process Name = PAT
+ModuleLabel = bunchSpacingProducer
+Branch ID = 1463108123
+Class Name = unsigned int
+Friendly Class Name = uint
+Product Instance Name = 
+
+-----
+
+----- End Fatal Exception -------------------------------------------------
+Another exception was caught while trying to clean up files after the primary fatal exception.
+06-Feb-2017 07:51:26 CST  Closed file root://cmsxrootd-site.fnal.gov//store/user/rgp230/EGMFix/MiniAOD/PAT_1.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 XrdAdaptor           -w file_open                              1        1
+    2 Additional Exception -s PostEndRun                             1        1
+    3 Fatal Exception      -s PostProcessPath                        1        1
+    4 fileAction           -s file_close                             1        1
+    5 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptor           pre-events                        
+    2 Additional Exceptions PostEndRun                        
+    3 Fatal Exception      278986/120099101                  
+    4 fileAction           PostEndRun                        
+    5 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 1                   1
+System                  5                   5
