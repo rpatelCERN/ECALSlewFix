@@ -26,7 +26,8 @@
 
 #include "FWCore/Framework/interface/Event.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
-
+#include "FWCore/ServiceRegistry/interface/Service.h"
+#include "CommonTools/UtilAlgos/interface/TFileService.h"
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 #include "FWCore/Utilities/interface/StreamID.h"
 #include "DataFormats/EgammaCandidates/interface/Photon.h"
@@ -76,7 +77,6 @@ class PatJetFix : public edm::stream::EDProducer<> {
 	edm::InputTag phoFix_;
 	edm::InputTag eleFix_;
 	edm::InputTag pCand_;
-
       //virtual void beginRun(edm::Run const&, edm::EventSetup const&) override;
       //virtual void endRun(edm::Run const&, edm::EventSetup const&) override;
       //virtual void beginLuminosityBlock(edm::LuminosityBlock const&, edm::EventSetup const&) override;
@@ -158,54 +158,87 @@ Handle< View< pat::Electron> > hElectronFixProduct;
 iEvent.getByToken(eleFixToken_,hElectronFixProduct);
 Handle<edm::View<pat::Jet> >PFJets;
 iEvent.getByToken(JetTok_, PFJets);
-
 std::auto_ptr< std::vector<pat::Jet> > patJets ( new std::vector<pat::Jet>() );
+std::vector<unsigned int>ElePFParticles;
+std::vector<unsigned int >EleCorrection;
 std::vector<unsigned int>PhoPFParticles;
 std::vector<unsigned int >PhoCorrection;
 auto phoFix=hPhotonFixProduct->begin();
 auto pho=hPhotonProduct->begin();
+auto eleFix=hElectronFixProduct->begin();
+auto ele=hElectronProduct->begin();
+
+for(ele=hElectronProduct->begin(); ele!=hElectronProduct->end(); ++ele, ++eleFix){
+	unsigned int eleindex=ele-hElectronProduct->begin();
+        if(ele->energy()/eleFix->energy()>1.000001 || ele->energy()/eleFix->energy()<0.999999){
+        for( const edm::Ref<pat::PackedCandidateCollection> & ref : ele->associatedPackedPFCandidates() ) {
+		ElePFParticles.push_back(ref.key());
+        	EleCorrection.push_back(eleindex);
+        }
+     }
+  }
 for(pho=hPhotonProduct->begin(); pho!=hPhotonProduct->end(); ++pho, ++phoFix){
 	unsigned int phoindex=pho-hPhotonProduct->begin();
         if(pho->energy()/phoFix->energy()>1.000001 || pho->energy()/phoFix->energy()<0.999999){
-
+	bool SameSC=false;
+          ele=hElectronProduct->begin();
+	for(unsigned int e=0; e<EleCorrection.size(); ++e){
+                 std::advance(ele,EleCorrection[e]);
+                 if(pho->superCluster()==ele->superCluster()){SameSC=true;break;}
+          }
+	if(SameSC)continue;	
         for( const edm::Ref<pat::PackedCandidateCollection> & ref : pho->associatedPackedPFCandidates() ) {
         PhoPFParticles.push_back(ref.key());
         PhoCorrection.push_back(phoindex);
         }
      }
   }
+
 for(auto Jet = PFJets->begin(); Jet != PFJets->end(); ++Jet){
 	bool EGMatch=false;
 	unsigned int idx=Jet-PFJets->begin();
 	edm::RefToBase<pat::Jet> jetRef = PFJets->refAt(idx);
 	pat::Jet ajet(jetRef);
-	unsigned int PhoIndx=-1;
+	int EleIndx=-1;
+	int PhoIndx=-1;
 	for( const edm::Ptr<reco::Candidate> & ref : Jet->getJetConstituents() ) {
-	    std::vector<unsigned int>::iterator it = find (PhoPFParticles.begin(), PhoPFParticles.end(), ref.key());	
-	    if(it!=PhoPFParticles.end()){
+	    std::vector<unsigned int>::iterator it = find (ElePFParticles.begin(), ElePFParticles.end(), ref.key());	
+	    if(it!=ElePFParticles.end()){
 		EGMatch=true;
-		PhoIndx=PhoCorrection[it-PhoPFParticles.begin()];
+		EleIndx=EleCorrection[it-ElePFParticles.begin()];
 		break; 
 		}
+	   it = find (PhoPFParticles.begin(), PhoPFParticles.end(), ref.key()); 
+	   if(it!=PhoPFParticles.end()){
+	     EGMatch=true;
+	     PhoIndx=PhoCorrection[it-PhoPFParticles.begin()];
+        }
       }
+
 	if(EGMatch){
 		math::XYZTLorentzVector pVecShift=ajet.p4();
-		//math::PtEtaPhiMLorentzVector PolarLorentzVector pVecShift=ajet.p4();
+		if(EleIndx>-1){
+		eleFix=hElectronFixProduct->begin();
+		ele=hElectronProduct->begin();
+		std::advance(ele,EleIndx);
+		std::advance(eleFix,EleIndx);	
+		pVecShift=pVecShift+(eleFix->p4()-ele->p4());
+		ajet.setP4(pVecShift);
+		}
+		if(PhoIndx>-1){
 		phoFix=hPhotonFixProduct->begin();
 		pho=hPhotonProduct->begin();
 		std::advance(pho,PhoIndx);
 		std::advance(phoFix,PhoIndx);	
-		float dpx=phoFix->px()-pho->px();
-		float dpy=phoFix->py()-pho->py();
-		float dpz=phoFix->pz()-pho->pz();
-		//float dpt=phoFix->pt()-pho->pt();
-		float dE=phoFix->energy()-pho->energy();
-		pVecShift.SetXYZT(pVecShift.Px()+dpx, pVecShift.Py()+dpy, pVecShift.Pz()+dpz,pVecShift.E()+dE);
+		pVecShift=pVecShift+(phoFix->p4()-pho->p4());
 		ajet.setP4(pVecShift);
+		}
+
          }
 		patJets->push_back(ajet);
 	
   }
+
 iEvent.put(patJets,"CorrPatJets");
  
 }
