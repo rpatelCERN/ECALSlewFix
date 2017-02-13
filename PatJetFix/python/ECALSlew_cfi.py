@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-ecalSlew = cms.EDProducer('PatJetFix'
+ecalSlew = cms.EDProducer('PatJetFix',
 electronsFixed=cms.InputTag("slimmedElectrons"),
 photonsFixed=cms.InputTag("slimmedPhotons"),
 electrons=cms.InputTag("slimmedElectronsBeforeGSFix"),
