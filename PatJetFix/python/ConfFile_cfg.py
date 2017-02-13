@@ -14,20 +14,18 @@ process.source = cms.Source("PoolSource",
         'file:/fdata/hepx/store/user/rish/CombineCards/EGM/ReMiniAOD/CMSSW_8_0_25/src/PAT_%d.root' %index
     )
 )
-process.TFileService = cms.Service("TFileService", fileName = cms.string("histo%d.root" %index) )
 process.PatJetFix = cms.EDProducer('PatJetFix',
 electronsFixed=cms.InputTag("slimmedElectrons"),
 photonsFixed=cms.InputTag("slimmedPhotons"),
 electrons=cms.InputTag("slimmedElectronsBeforeGSFix"),
 PackedPart=cms.InputTag("packedPFCandidates"),
+METCorr=cms.InputTag("slimmedMETsEGClean"),
+MET=cms.InputTag("slimmedMETsUncorrected"),
 photons=cms.InputTag("slimmedPhotonsBeforeGSFix"),
 jets=cms.InputTag("slimmedJets"),
 )
 
-process.out = cms.OutputModule("PoolOutputModule",
-    fileName = cms.untracked.string('myOutputFile.root')
-)
 
   
 process.p = cms.Path(process.PatJetFix)
-process.e = cms.EndPath(process.out)
+#process.e = cms.EndPath(process.out)
