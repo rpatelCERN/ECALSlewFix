@@ -130,7 +130,7 @@ PatJetFix::PatJetFix(const edm::ParameterSet& iConfig)
    JetTok_=consumes< edm::View<pat::Jet> >(jets_);
    METTok_=consumes< edm::View<pat::MET> >(MET_);
    METCorrTok_=consumes< edm::View<pat::MET> >(METFix_);
-   produces<std::vector<pat::Jet> >("CorrPatJets");  
+   produces<std::vector<pat::Jet> >();  
 }
 
 
@@ -179,7 +179,7 @@ for(auto Jet = PFJets->begin(); Jet != PFJets->end(); ++Jet){
         pat::Jet ajet(jetRef);
 	patJets->push_back(ajet);
 }
-iEvent.put(patJets,"CorrPatJets");//Just a copy of the original collection
+iEvent.put(patJets);//Just a copy of the original collection
 return;
 }
 std::vector<unsigned int>ElePFParticles;
@@ -293,8 +293,7 @@ for(auto Jet = PFJets->begin(); Jet != PFJets->end(); ++Jet){
 	
   }
 
-iEvent.put(patJets,"CorrPatJets");
- 
+iEvent.put(patJets); 
 }
 
 // ------------ method called once each stream before processing any runs, lumis or events  ------------
